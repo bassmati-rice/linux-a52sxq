@@ -256,7 +256,7 @@
 
 		gpio = <&tlmm 49 GPIO_ACTIVE_HIGH>;
 		enable-active-high;
-		/* Always-on prevents CCI bus timeouts */
+		// Always-on prevents CCI bus timeouts
 		regulator-always-on;
 
 		vin-supply = <&vreg_bob>;
@@ -379,7 +379,6 @@
 };
 
 &apps_rsc {
-	/*
 	regulators-0 {
 		compatible = "qcom,pm7325-rpmh-regulators";
 		qcom,pmic-id = "b";
@@ -825,7 +824,6 @@
 			regulator-initial-mode = <RPMH_REGULATOR_MODE_AUTO>;
 		};
 	};
-	*/
 };
 
 &camss {

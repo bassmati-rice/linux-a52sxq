@@ -110,12 +110,14 @@
 		#size-cells = <2>;
 		ranges;
 
-		ramoops_mem: ramoops@83a00000 {
+		ramoops_mem: ramoops@f0b00000 {
 			compatible = "ramoops";
-			reg = <0x0 0x83a00000 0x0 0x400000>;
-			pmsg-size = <0x200000>;
+			reg = <0x0 0xf0b00000 0x0 0x100000>;
+			pmsg-size = <0x40000>;
 			mem-type = <2>;
-			console-size = <0x200000>;
+			console-size = <0x40000>;
+			record-size = <0x40000>;
+			ftrace-size = <0x40000>;
 		};
 
 		cdsp_mem: cdsp@88f00000 {
